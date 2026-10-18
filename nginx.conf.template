@@ -7,12 +7,14 @@ server {
     # ── صفحه اصلی: index.html از پوشه statics ─────────────────
     # / → /app/statics/index.html
     location = / {
-        alias /app/statics/index.html;
+        root /app/statics;
+        try_files /index.html =404;
+        add_header Cache-Control "no-cache";
     }
 
     # ── فایل‌های استاتیک دیگر (لوگو، CSS، JS) ─────────────────
     location /statics/ {
-        alias /app/statics/;
+        root /app;
         expires 7d;
         add_header Cache-Control "public, immutable";
     }
