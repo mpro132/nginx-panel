@@ -4,14 +4,22 @@ server {
 
     client_max_body_size 100M;
 
-    # صفحه اصلی: فایل استاتیک
+    # ── صفحه اصلی: index.html از پوشه static ─────────────────
+    # / → /app/static/index.html
     location = / {
-        root /app/static;
-        index index.html;
-        try_files /index.html =404;
+        root /app;
+        try_files /static/index.html =404;
+        add_header Cache-Control "no-cache";
     }
 
-    # بقیه مسیرها: پروکسی به پنل روی 8081
+    # ── فایل‌های استاتیک دیگر (اگر خواستی css/js/تصویر محلی بگذاری) ──
+    location /static/ {
+        root /app;
+        expires 1d;
+        add_header Cache-Control "public";
+    }
+
+    # ── بقیه مسیرها: پروکسی به پنل روی 8081 ──────────────────
     location / {
         proxy_pass http://127.0.0.1:8081;
         proxy_http_version 1.1;
@@ -22,7 +30,7 @@ server {
         proxy_set_header X-Forwarded-Host $host;
     }
 
-    # WebSocket برای VLESS/WS
+    # ── WebSocket برای VLESS/WS ──────────────────────────────
     location /ws/ {
         proxy_pass http://127.0.0.1:8081;
         proxy_http_version 1.1;
@@ -37,7 +45,7 @@ server {
         proxy_buffering off;
     }
 
-    # XHTTP
+    # ── XHTTP ────────────────────────────────────────────────
     location /xhttp-siz10/ {
         proxy_pass http://127.0.0.1:8081;
         proxy_http_version 1.1;
