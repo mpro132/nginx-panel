@@ -55,7 +55,7 @@ input:focus+.ic{color:var(--accent)}
   <div class="card">
     <div class="brand">
       <div class="brand-icon"><i class="ti ti-brand-azure"></i></div>
-      <div><div class="brand-name">Purple-Panel</div><div class="brand-sub">v1.0</div></div>
+      <div><div class="brand-name">Purple-Panel</div><div class="brand-sub">v9.9</div></div>
     </div>
     <h1>ورود به پنل</h1>
     <p class="sub">رمز عبور را برای دسترسی به داشبورد وارد کنید</p>
@@ -743,7 +743,7 @@ a{color:inherit;text-decoration:none}
   <button class="sb-close" id="close-sb"><i class="ti ti-x"></i></button>
   <div class="logo">
     <div class="logo-icon"><i class="ti ti-brand-azure"></i></div>
-    <div><div class="logo-name">Purple-Panel</div><div class="logo-sub">v1.0</div></div>
+    <div><div class="logo-name">Purple-Panel</div><div class="logo-sub">v9.9</div></div>
   </div>
   <div class="nav-wrap">
     <div class="nav-sec">پنل</div>
@@ -805,7 +805,7 @@ a{color:inherit;text-decoration:none}
     </div>
   </div>
 <div class="dash-footer">
-    <span class="df-text">Purple-Panel v1.0 · Railway</span>
+    <span class="df-text">Purple-Panel v9.9 · Railway</span>
     <div style="display:flex;gap:8px;font-size:11px;color:var(--t2);align-items:center;flex-wrap:wrap">
       <span>🔥 ساخته شده با ❤️ توسط <a href="https://github.com/test" target="_blank" style="color:var(--accent);font-weight:700">@test</a></span>
       <span style="color:var(--t3)">|</span>
@@ -1142,7 +1142,7 @@ a{color:inherit;text-decoration:none}
       </div>
       <div class="srv-tiles">
         <div class="srv-tile"><div class="srv-tile-icon"><i class="ti ti-route"></i></div><div class="srv-tile-text"><div class="srv-tile-label">پورت پیش‌فرض</div><div class="srv-tile-val">443 (TLS) · قابل تغییر در هر کانفیگ</div></div></div>
-        <div class="srv-tile"><div class="srv-tile-icon"><i class="ti ti-versions"></i></div><div class="srv-tile-text"><div class="srv-tile-label">نسخه</div><div class="srv-tile-val">v1.0</div></div></div>
+        <div class="srv-tile"><div class="srv-tile-icon"><i class="ti ti-versions"></i></div><div class="srv-tile-text"><div class="srv-tile-label">نسخه</div><div class="srv-tile-val">v9.9</div></div></div>
         <div class="srv-tile"><div class="srv-tile-icon"><i class="ti ti-brand-fastapi"></i></div><div class="srv-tile-text"><div class="srv-tile-label">فریم‌ورک</div><div class="srv-tile-val">FastAPI + Uvicorn</div></div></div>
         <div class="srv-tile"><div class="srv-tile-icon"><i class="ti ti-cloud"></i></div><div class="srv-tile-text"><div class="srv-tile-label">پلتفرم</div><div class="srv-tile-val">Railway</div></div></div>
         <div class="srv-tile" style="grid-column:1/-1"><div class="srv-tile-icon"><i class="ti ti-device-floppy"></i></div><div class="srv-tile-text"><div class="srv-tile-label">ذخیره‌سازی</div><div class="srv-tile-val">JSON File (/data)</div></div></div>
@@ -2065,7 +2065,7 @@ html,body{{min-height:100%;background:var(--bg);font-family:var(--serif);color:v
   <div class="top">
     <div class="brand">
       <div class="brand-icon"><i class="ti ti-brand-azure"></i></div>
-      <div><div class="brand-name">Purple-Panel</div><div class="brand-sub">v1.0</div></div>
+      <div><div class="brand-name">Purple-Panel</div><div class="brand-sub">v9.9</div></div>
     </div>
     <div class="top-actions">
       <button class="icon-btn" id="theme-toggle" onclick="toggleTheme()" title="تغییر تم"><i class="ti ti-sun" id="theme-icon"></i></button>
@@ -2078,7 +2078,7 @@ html,body{{min-height:100%;background:var(--bg);font-family:var(--serif);color:v
   <div class="footer">
     <span>ساخته شده با ❤️ توسط <a href="https://github.com/test" target="_blank">@test</a></span>
     <div class="credit">کاستوم‌سازی: <a href="https://t.me/AghaBanafshi" target="_blank">@AghaBanafshi</a></div>
-    <span>پشتیبانی: <a href="https://t.me/X4GHUB" target="_blank">@AghaBanafshi</a> · Purple-Panel v1.0</span>
+    <span>پشتیبانی: <a href="https://t.me/X4GHUB" target="_blank">@AghaBanafshi</a> · Purple-Panel v9.9</span>
   </div>
 </div>
 <script>
