@@ -206,7 +206,7 @@ async def startup():
     await load_state()
     await _tg_start_bot()
     log_activity("system", "سرور راه‌اندازی شد", "ok")
-    logger.info(f"Purple-Panel v9.8 started on port {CONFIG['port']}")
+    logger.info(f"Purple-Panel v9.9 started on port {CONFIG['port']}")
 
 @app.on_event("shutdown")
 async def shutdown():
@@ -383,7 +383,7 @@ def client_ip(request: Request) -> str:
 # ── Basic endpoints ───────────────────────────────────────────────────────────
 @app.get("/")
 async def root():
-    return {"service": "PurplePanel", "version": "9.8", "status": "active", "channel": "https://t.me/aghabanafshi"}
+    return {"service": "PurplePanel", "version": "9.9", "status": "active", "channel": "https://t.me/aghabanafshi"}
 
 @app.get("/health")
 async def health():
